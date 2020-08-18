@@ -1,0 +1,12 @@
+module.exports={
+    port:process.env.PORT||8081,
+    db:{
+        database:process.env.DB_NAME||'faminess',
+        user:process.env.DB_USER||'root',
+        password:process.env.DB_PASS||'root',
+        options:{
+            host:process.env.HOST||'localhost',
+            dialect:'mysql'
+        }
+    },
+};
